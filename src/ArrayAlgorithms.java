@@ -336,7 +336,7 @@ public class ArrayAlgorithms {
 
 
     /** Returns the number of elements in the numList array that have the same
-     *  value as the element immediately adjacent to the right in the array.
+     *  value as the element immediately adjacent to the right in the array
      *  (BE CAREFUL not to go out of bounds!)
      *  For example, given the array {4, 7, 7, 3, 2, 2, 4, 4, 4, 6, 4, 6, 6}
      *  this method would return 5, since there are five numbers in the array that

@@ -101,13 +101,13 @@ public class ArrayAlgorithmTester
         System.out.println(Arrays.toString(shiftedLeftArr));
 
         // original array NOT modified
-        System.out.println(Arrays.toString(nums));*/
+        System.out.println(Arrays.toString(nums));
 
         int[] nums = {5, 1, 3, 4, 7};
         ArrayAlgorithms.shiftLeftModify(nums);
 
         // original array IS modified
-        System.out.println(Arrays.toString(nums));
+        System.out.println(Arrays.toString(nums));*/
 
 
 
