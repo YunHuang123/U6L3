@@ -416,25 +416,17 @@ public class ArrayAlgorithms {
      *
      *  @param numList  original array of numbers; DOES get modified
      */
-    public static void shiftNumLeftModify(int[] numList, int shiftNum)
-    {
-        String num = "";
-        for (int i = 0; i < numList.length - (numList.length - shiftNum); i ++)
-        {
-            num = num + numList[i];
+    public static void shiftNumLeftModify(int[] numList, int shiftNum) {
+        int[] num = new int[shiftNum];
+        for (int i = 0; i < shiftNum; i++) {
+            num[i] = numList[i];
         }
-        for (int i = 0; i < numList.length - shiftNum; i ++)
-        {
-            numList[i] = numList[i + shiftNum];
+        for (int i = shiftNum; i < numList.length; i++) {
+            numList[i - shiftNum] = numList[i];
         }
-        for (int i = shiftNum; i < numList.length; i ++)
-        {
-            numList[i] = Integer.parseInt(num) % 10;
-            num = num.replace(num, num.substring(0, num.length() - 1));
-            if (num.equals(""))
-            {
-                break;
-            }
+        for (int i = 0; i < shiftNum; i ++) {
+            int index = numList.length - shiftNum;
+            numList[index + i] = num[i];
         }
     }
 
